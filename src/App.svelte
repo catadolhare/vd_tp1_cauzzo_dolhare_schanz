@@ -13,6 +13,8 @@
         
     {/each}
 </div>
+
+
 <!-- Estilos CSS -->
 <style>
     .container{
@@ -22,21 +24,22 @@
     }
     .column{
         background-color: blue;
+        /*background-image: './images/agua.jpg';*/
         width: 50px;
-        /*margin: 10px;*/
         
     }
     .mask{
         width: 50px;
-        height:100px;
+        height:100px; /*sale columna por abajo xq el svg tiene parte por abajo de borde de figura*/
         position: absolute;
         bottom: 0;
+        z-index: 1;
     }
     .col-wrap{
         position: relative;
-        border: 1px solid black;
         width: 50px;
         margin: 5px;
     }
+
 
 </style>
