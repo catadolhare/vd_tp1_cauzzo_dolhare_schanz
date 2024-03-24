@@ -4,7 +4,8 @@
 </script>
 
 <!-- Estructura contenido HTML -->
-<div class="container">
+<h1 class="titulo">Representación de distintas magnitudes en el consumo de agua de una persona</h1>
+<div class="col-container">
     {#each magnitudes as m}
         <div class="col-wrap">
             <div class = 'column' style='height: {m}px'></div>
@@ -17,7 +18,14 @@
 
 <!-- Estilos CSS -->
 <style>
-    .container{
+    .titulo{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .col-container{
+        
         display: flex;
         align-items: flex-end;
         justify-content:center;
