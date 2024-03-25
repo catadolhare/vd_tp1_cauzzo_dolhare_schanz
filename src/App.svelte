@@ -4,25 +4,40 @@
 </script>
 
 <!-- Estructura contenido HTML -->
-<h1 class="titulo">Representación de distintas magnitudes en el consumo de agua de una persona</h1>
-<div class="col-container">
-    {#each magnitudes as m}
-        <div class="col-wrap">
-            <div class = 'column' style='height: {m*2}px'></div>
-            <img class = 'mask' src="./images/tipito.svg" alt="">
-        </div>
-        
-    {/each}
+<div class="container">
+    <h1 class="titulo">Representación de distintas magnitudes en el consumo de agua de una persona</h1>
+    <div class="ingresar">
+        <input type="text" id='valor'>
+        <button onclick=''>Enter</button>
+    </div>
+    <div class="col-container">
+        {#each magnitudes as m}
+            <div class="col-wrap">
+                <div class = 'column' style='height: {m*2}px'></div>
+                <img class = 'mask' src="./images/tipito.svg" alt="">
+            </div>
+            
+        {/each}
+    </div>    
 </div>
 
 
 <!-- Estilos CSS -->
 <style>
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
     .titulo{
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
         text-decoration: underline;
         text-align: center;
+    }
+    .ingresar{
+        display: flex;
+        justify-content: center;
+        align-items:center;
     }
     .col-container{
         
