@@ -8,7 +8,7 @@
 <div class="col-container">
     {#each magnitudes as m}
         <div class="col-wrap">
-            <div class = 'column' style='height: {m}px'></div>
+            <div class = 'column' style='height: {m*2}px'></div>
             <img class = 'mask' src="./images/tipito.svg" alt="">
         </div>
         
@@ -33,20 +33,20 @@
     .column{
         background-color: blue;
         /*background-image: './images/agua.jpg';*/
-        width: 50px;
+        width: 100px;
         
     }
     .mask{
-        width: 50px;
-        height:100px; /*sale columna por abajo xq el svg tiene parte por abajo de borde de figura*/
+        width: 100px;
+        height:200px; /*sale columna por abajo xq el svg tiene parte por abajo de borde de figura*/
         position: absolute;
         bottom: 0;
         z-index: 1;
     }
     .col-wrap{
         position: relative;
-        width: 50px;
-        margin: 5px;
+        width: 100px;
+        margin: 10px;
     }
 
 
